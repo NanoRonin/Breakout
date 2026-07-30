@@ -6,12 +6,12 @@ function love.load()
     ball = {}
     rectangles = {}
 
-    font = love.graphics.newFont("germainiaFont.ttf", 25)
+    font = love.graphics.newFont("assets/germainiaFont.ttf", 25)
     resetGame()
 end
 
 function love.update(dt)
-    playerImage = love.graphics.newImage("heart.png")
+    playerImage = love.graphics.newImage("assets/heart.png")
 
     if (love.keyboard.isDown("a") or love.keyboard.isDown("left")) and paddle.x > 0 then
         paddle.x = paddle.x - paddle.speed * dt
